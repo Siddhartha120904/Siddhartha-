@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maddula Siddhartha | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <nav>
+        <div class="logo">MyPortfolio</div> 
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button id="theme-toggle" class="p-2 rounded-full transition">
+                <i data-lucide="sun" id="sun-icon" class="w-5 h-5 text-amber-500"></i>
+                <i data-lucide="moon" id="moon-icon" class="w-5 h-5 hidden text-blue-400"></i>
+            </button>
+            <a href="#contact" class="hire-btn">Hire Me</a>
+        </div>
+    </nav>
+
+    <div class="hero-container" id="home">
+        <div class="hero-image"> 
+            <img src="file:///C:/Users/USER/OneDrive/Documents/my%20first%20creation/me/WhatsApp%20Image%202026-02-02%20at%207.40.57%20PM.jpeg" alt="Siddhartha">
+        </div>
+        <div class="hero-text">  
+            <h1>Hi, I'm <br><span class="highlight">MADDULA SIDDHARTHA</span></h1>
+            <p>Bridging the worlds of Full-Stack Innovation and AI-Driven Analytics. I don’t just build websites; I engineer digital ecosystems that think, learn, and grow.</p>
+        </div>
+    </div>
+<section class="internship-section" id="internships">
+    <div class="container-wrapper">
+        <h4 class="sub-heading">Experience</h4>
+        <h2 class="section-title">Internships</h2>
+        
+        <div class="intern-grid">
+            <div class="intern-card">
+                <div class="intern-header">
+                    <div class="intern-icon"><i data-lucide="briefcase"></i></div>
+                    <div>
+                        <h3 class="intern-title">Data Science Intern</h3>
+                        <p class="intern-company">Corizo</p>
+                    </div>
+                </div>
+                <div class="intern-body">
+                    <p class="intern-desc">Focused on the end-to-end data pipeline, from cleaning messy datasets to deploying predictive models.</p>
+                    <div class="skills-tags mini">
+                        <span>Exploratory Data Analysis (EDA)</span>
+                        <span>Pandas & NumPy</span>
+                        <span>Scikit-Learn</span>
+                        <span>Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intern-card">
+                <div class="intern-header">
+                    <div class="intern-icon"><i data-lucide="bot"></i></div>
+                    <div>
+                        <h3 class="intern-title">Generative AI Intern</h3>
+                        <p class="intern-company">SmartInternz (Google Cloud Partner)</p>
+                    </div>
+                </div>
+                <div class="intern-body">
+                    <p class="intern-desc">Explored LLMs and cloud-based AI services to build intelligent automation solutions.</p>
+                    <div class="skills-tags mini">
+                        <span>Prompt Engineering</span>
+                        <span>Vertex AI</span>
+                        <span>Large Language Models (LLMs)</span>
+                        <span>Cloud Computing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intern-card">
+                <div class="intern-header">
+                    <div class="intern-icon"><i data-lucide="bar-chart-3"></i></div>
+                    <div>
+                        <h3 class="intern-title">Data Analytics with Tableau</h3>
+                        <p class="intern-company">SmartInternz (Salesforce Partner)</p>
+                    </div>
+                </div>
+                <div class="intern-body">
+                    <p class="intern-desc">Transformed raw business data into interactive dashboards for decision-making.</p>
+                    <div class="skills-tags mini">
+                        <span>Data Visualization</span>
+                        <span>Tableau Desktop</span>
+                        <span>Dashboard Design</span>
+                        <span>SQL Queries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="projects-container" id="projects">
+    <div class="container-wrapper">
+        <h4 class="sub-heading">PROJECTS</h4>
+        <h2 class="section-title"></h2>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image" onclick="openModal('Weather App')">
+                    <img src="https://raw.githubusercontent.com/Siddhartha120904/ATMOS-MONITORING-SYSTEM/refs/heads/main/Gemini_Generated_Image_jdu8lqjdu8lqjdu8.png" alt="Weather">
+                    <div class="project-overlay"><span>Quick View</span></div>
+                </div>
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>Real-time tracking via API.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/Siddhartha120904/ATMOS-MONITORING-SYSTEM" class="btn-code"><i data-lucide="github"></i> Code</a>
+                        <a href="https://atmos-monitoring-system-7myvu9gmk-siddhartha-maddulas-projects.vercel.app/" class="btn-demo" class="btn-demo"><i data-lucide="external-link"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image" onclick="openModal('Liver Disease')">
+                    <img src="https://t3.ftcdn.net/jpg/07/69/55/88/240_F_769558846_l3UvsH8MGsMTuvCY3FiF1Z1AzCuvAEfx.jpg" alt="Liver">
+                    <div class="project-overlay"><span>Quick View</span></div>
+                </div>
+                <div class="project-info">
+                    <h3>Liver Disease</h3>
+                    <p>AI ML Prediction Model.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/Siddhartha120904/MRFS-EC-Liver-Disease-Detection" class="btn-code"><i data-lucide="github"></i> Code</a>
+                        <a href="https://mrfs-ec-liver-disease-detection-mifgkxa62nfnxmxx3se7rz.streamlit.app/" class="btn-demo"><i data-lucide="external-link"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image"><img src="https://www.economist.com/cdn-cgi/image/width=960,quality=80,format=auto/sites/default/files/images/print-edition/20160430_LDD001_0.jpg" alt="Work"></div>
+                <div class="project-info">
+                    <h3>Measuring Economic Freedom Analysis</h3>
+                    <p>Measuring-the-pulse-of-prosperity-An-Index-of-economic-freedom-analysis.
+                        A Data Analytics with  Tableau project 
+                    </p>
+                    <div class="project-actions">
+                        <a href="https://github.com/Siddhartha120904/Measuring-the-pulse-of-prosperity-An-Index-of-economic-freedom-analysis" class="btn-code"><i data-lucide="github"></i> Code</a>
+                        <a href="https://public.tableau.com/app/profile/yoshika.yadav/viz/MeasuresofEconomicFreedomLTVIP2025TMID20778/2022economicfreedomscore?publish=yes" class="btn-demo"><i data-lucide="external-link"></i>Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image"><img src="file:///C:/Users/USER/OneDrive/Documents/my%20first%20creation/me/Capture.PNG" alt="Work"></div>
+                <div class="project-info">
+                    <h3>The Portfolio</h3>
+                    <p>The Very Project You Are Seeing.</p>
+                    <div class="project-actions">
+                        <a href="#home" class="btn-demo"><i data-lucide="external-link"></i>Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skills-section" id="skills">
+    <div class="container-wrapper">
+        <h4 class="sub-heading">Expertise</h4>
+        <h2 class="section-title">ALL SKILLS</h2>
+        
+        <div class="skills-category-grid">
+            <div class="skill-category-card">
+                <div class="category-header">
+                    <i data-lucide="code-2"></i>
+                    <h3>Development</h3>
+                </div>
+                <div class="skills-tags">
+                    <span>Python</span><span>Java</span><span>JavaScript (ES6+)</span>
+                    <span>Node.js</span><span>React.js</span><span>Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="skill-category-card">
+                <div class="category-header">
+                    <i data-lucide="layout"></i>
+                    <h3>Frontend</h3>
+                </div>
+                <div class="skills-tags">
+                    <span>HTML5</span><span>CSS3</span><span>Responsive Design</span>
+                </div>
+            </div>
+
+            <div class="skill-category-card">
+                <div class="category-header">
+                    <i data-lucide="database"></i>
+                    <h3>Data & Database</h3>
+                </div>
+                <div class="skills-tags">
+                    <span>SQL</span><span>PostgreSQL</span><span>Tableau</span><span>Power BI</span>
+                </div>
+            </div>
+
+            <div class="skill-category-card">
+                <div class="category-header">
+                    <i data-lucide="users"></i>
+                    <h3>Soft Skills</h3>
+                </div>
+                <div class="skills-tags">
+                    <span>Teamwork</span><span>Problem-Solving</span><span>Quick Learner</span>
+                </div>
+            </div>
+
+            <div class="skill-category-card">
+                <div class="category-header">
+                    <i data-lucide="heart"></i>
+                    <h3>Interests</h3>
+                </div>
+                <div class="skills-tags">
+                    <span>Anime</span><span>Reading Manhawa</span><span>Music</span><span>History</span><span>Research</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="certificates-section" id="certificates">
+    <div class="container-wrapper">
+        <h4 class="sub-heading">Recognition</h4>
+        <h2 class="section-title">Certifications & Experience</h2>
+        
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-icon"><i data-lucide="briefcase"></i></div>
+                <div class="cert-content">
+                    <h3 class="cert-name">Data Science Internship</h3>
+                    <p class="cert-issuer">Corizo • 2025</p>
+                    <p class="cert-detail">Worked on predictive modeling, data cleaning, and exploratory data analysis using Python.</p>
+                    <a href="https://drive.google.com/file/d/1ce0JgHWfADtz6anjLZ_mTKVbiZ5_9yJV/view?usp=drivesdk" target="_blank" class="view-cert-link">View Certificate <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon"><i data-lucide="award"></i></div>
+                <div class="cert-content">
+                    <h3 class="cert-name">Data Science Training</h3>
+                    <p class="cert-issuer">Corizo • 2025</p>
+                    <p class="cert-detail">Comprehensive training in Scikit-Learn, statistics, and advanced regression techniques.</p>
+                    <a href="https://drive.google.com/file/d/1W7u0dwxBNddsld79jBm_G84h-u-Mk_zI/view?usp=drivesdk" target="_blank" class="view-cert-link">View Certificate <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon"><i data-lucide="bar-chart-3"></i></div>
+                <div class="cert-content">
+                    <h3 class="cert-name">Data Analytics with Tableau</h3>
+                    <p class="cert-issuer">SmartInternz • 2025</p>
+                    <p class="cert-detail">Created interactive business dashboards and visual storytelling via Salesforce partners.</p>
+                    <a href="https://drive.google.com/file/d/1pd-KPgsR274RSB2qQ9OuP7Sbj3PYv8ui/view?usp=drivesdk" target="_blank" class="view-cert-link">View Certificate <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon"><i data-lucide="bot"></i></div>
+                <div class="cert-content">
+                    <h3 class="cert-name">Generative AI Internship</h3>
+                    <p class="cert-issuer">SmartInternz • 2024</p>
+                    <p class="cert-detail">Hands-on with Google Cloud Vertex AI, prompt engineering, and LLM application design.</p>
+                    <a href="https://drive.google.com/file/d/1XojRg8nfjhovSnrnk-UEV1EKX-jEtz67/view?usp=drivesdk" target="_blank" class="view-cert-link">View Certificate <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon"><i data-lucide="cpu"></i></div>
+                <div class="cert-content">
+                    <h3 class="cert-name">Introduction to IOT</h3>
+                    <p class="cert-issuer">NPTEL • Elite Certification</p>
+                    <p class="cert-detail">Studied sensor networks, Arduino/Raspberry Pi integration, and IoT architecture.</p>
+                    <a href="https://drive.google.com/file/d/1AQ5Mh8Wb9TcnDOM7W1etPB9A4SToMkFe/view?usp=drivesdk" target="_blank" class="view-cert-link">View Certificate <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon"><i data-lucide="code-2"></i></div>
+                <div class="cert-content">
+                    <h3 class="cert-name">Python Basics for Data Science</h3>
+                    <p class="cert-issuer">IBM / EdX</p>
+                    <p class="cert-detail">Mastered Python fundamentals, data structures, and working with APIs for data retrieval.</p>
+                    <a href="https://drive.google.com/file/d/1hgrOniDOA0Z5fcxvnuBkcRcAJAJnYoFY/view?usp=drivesdk" target="_blank" class="view-cert-link">View Certificate <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon"><i data-lucide="palette"></i></div>
+                <div class="cert-content">
+                    <h3 class="cert-name">Website UI/UX with AI</h3>
+                    <p class="cert-issuer">Simplilearn • 2024</p>
+                    <p class="cert-detail">Leveraging Generative AI for wireframing, UX copywriting, and modern web design trends.</p>
+                    <a href="https://drive.google.com/file/d/10IWTyrBBrXA8e8WwgjZ_IHBbeLTPfcIJ/view?usp=drivesdk" target="_blank" class="view-cert-link">View Certificate <i data-lucide="external-link"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="contact-footer" id="contact">
+    <div class="container-wrapper">
+        <div class="footer-grid">
+            
+            <div class="contact-info-side">
+                <div class="heading-container">
+                    <span class="sub-title">Communication</span>
+                    <h2 class="contact-title">Get In <span class="italic-accent">Touch</span></h2>
+                </div>
+                
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <div class="detail-header">
+                            <i data-lucide="mail"></i>
+                            <span>Email Address</span>
+                        </div>
+                        <a href="mailto:siddharthas997@gmail.com" class="contact-link">
+                            siddharthas997@gmail.com
+                        </a>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-header">
+                            <i data-lucide="map-pin"></i>
+                            <span>Office Location</span>
+                        </div>
+                        <p class="detail-text">Vijayawada, Andhra Pradesh, India</p>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-header">
+                            <i data-lucide="calendar-check"></i>
+                            <span>Availability</span>
+                        </div>
+                        <p class="detail-text">Open for new opportunities</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <form action="https://formspree.io/f/xnjzkaov" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <span class="input-line"></span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <span class="input-line"></span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <textarea name="message" placeholder="Describe your project..." rows="4" required></textarea>
+                        <span class="input-line"></span>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i data-lucide="send"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2026 MADDULA SIDDHARTHA &bull; Built with Passion</p>
+            </div>
+            
+            <div class="social-icons">
+                <a href="https://github.com/Siddhartha120904" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/maddula-siddhartha-458192304" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://x.com/SiddhuSidd25380" target="_blank" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>

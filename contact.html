@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-link">← Back to Home</a>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Get in Touch</h1>
+        <p>Have a question or want to work together?</p>
+        
+        <form action="/submit" method="POST" id="contact-form">
+            <input type="text" name="userName" placeholder="Full Name" required>
+            <input type="email" name="userEmail" placeholder="Email Address" required>
+            <textarea name="userMessage" placeholder="How can I help you?" required></textarea>
+            
+            <button type="submit" id="submit-btn">
+                <span class="button-text">Send Message</span>
+                <div class="spinner"></div>
+            </button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const btn = document.getElementById('submit-btn');
+        const btnText = btn.querySelector('.button-text');
+
+        form.addEventListener('submit', function() {
+            // Add the loading class we defined in CSS
+            btn.classList.add('is-loading');
+            
+            // Change the text to "Sending..."
+            btnText.innerText = 'Sending...';
+            
+            // Disable the button so it can't be clicked twice
+            btn.style.pointerEvents = 'none';
+        });
+    </script>
+</body>
+</html>
